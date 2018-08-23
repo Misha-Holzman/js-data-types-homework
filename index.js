@@ -43,9 +43,9 @@ console.log(bestClassLowercase);
 const amount1 = 1;
 const amount2 = 3;
 
-const total = amount1 + amount2
+const total = amount1 + amount2;
 
-
+console.log(total);
 
 // Write an expression here which computes
 // the correct value of a constant "total" based on the values of a and b
