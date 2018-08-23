@@ -27,6 +27,13 @@ console.log('EXAMPLE', 'tripledVariable', tripledVariable);
 
 // Set a bestClassLowercase variable converting bestClass to a lowercase string. Log this value.
 
+const Arcadia = 'bestClass';
+console.log(Arcadia);
+
+const bestClassLowercase = Arcadia.toLowerCase();
+console.log(bestClassLowercase);
+
+
 /********************************
  *
  * STEP B: Total
@@ -35,6 +42,10 @@ console.log('EXAMPLE', 'tripledVariable', tripledVariable);
 
 const amount1 = 1;
 const amount2 = 3;
+
+const total = amount1 + amount2
+
+
 
 // Write an expression here which computes
 // the correct value of a constant "total" based on the values of a and b
