@@ -75,51 +75,144 @@ console.log(kilograms);
  *
  *********************************/
 
+
 // Create a variable grandHotelTremezzoGuests that is equal to an array containing three strings:
 // 'George Clooney' 'Silvio Berlusconi'  and 'Isabella Rossellini'. Log grandHotelTremezzoGuests.
 
+const grandHotelTremezzoGuests = ['George Clooney', 'Silvio Berlusconi', 'Isabella Rossellini'];
+console.log(grandHotelTremezzoGuests);
+
+
+
 // A new guest is checking in! Add "Fabio" to the end of the array. Log grandHotelTremezzoGuests.
+
+grandHotelTremezzoGuests.push('Fabio');
+console.log(grandHotelTremezzoGuests);
+
+
 
 // False alarm! Fabio was on a roller coaster and got hit in the face with a pigeon 
 // so he won't be able to stay at the hotel remove him from the end of the array.  
 // (We didn't use this method in class you will have to research.)  Log grandHotelTremezzoGuests.
 
+grandHotelTremezzoGuests.pop('Fabio');
+console.log(grandHotelTremezzoGuests);
+
+
+
 // A new guest is checking in for real! Add 'Mario Batali' to the end of our array. 
 // He is wearing a disguise...but orange crocs. Log grandHotelTremezzoGuests.
+
+grandHotelTremezzoGuests.push('Mario Batali');
+console.log(grandHotelTremezzoGuests);
+
+
 
 // Another new guest is checking in for real! Add 'Mario Balotelli' to the end of our array. 
 // Log grandHotelTremezzoGuests.
 
+grandHotelTremezzoGuests.push('Mario Balotelli');
+console.log(grandHotelTremezzoGuests);
+
+
+
 // Create a variable that is equal to the number of guests staying in our hotel by 
 // checking the items count of grandHotelTremezzoGuests array.  Log this.
 
+let hotelCapacity = grandHotelTremezzoGuests.length;
+console.log(hotelCapacity);
+
+
+
 // Create a variable 'grandHotelTremezzoPastGuests' set to an empty Array.
 
-// George Clooney had a scooter accident so has to check out.  
+// George Clooney had a scooter accident so has to check out.  **
 // Remove him from our array of guests.  Use both the splice method 
 // and the push method to add his name to 'grandHotelTremezzoPastGuests' 
 // while simultaneously removing him from grandHotelTremezzoGuests. 
 // Log both grandHotelTremezzoGuests and grandHotelTremezzoPastGuests in the same log statement.
 
+const grandHotelTremezzoPastGuests = [];
+grandHotelTremezzoGuests.splice(0, 1);
+grandHotelTremezzoPastGuests.push('George Clooney');
+console.log(grandHotelTremezzoGuests);
+console.log(grandHotelTremezzoPastGuests);
+
+
+
 // ***Re-assign*** the variable that is equal to the number of guests staying 
 // in our hotel by checking the items count of grandHotelTremezzoGuests array.  
 // (Don't create a new variable)  Log this.
 
+hotelCapacity = grandHotelTremezzoGuests.length;
+console.log(hotelCapacity);
+
+ 
+
 // The hotel is going to deliver a bottle of Nero de Como to each guest. 
 // Use a for loop to log out '*Silvio Berlusconi* gets a bottle of Nero de Como' for each guest.
+
+for (let i = 0; i < grandHotelTremezzoGuests.length; i++) {
+	console.log((grandHotelTremezzoGuests[i]) + ' gets a bottle of Nero de Como');
+};
+
+
 
 // The guests drank their bottles of Nero de Como and are getting rowdy. 
 // Tell them to be quiet by using a for loop to say ... '*Silvio Berlusconi* please hush up!!!'
 
+for (let i = 0; i < grandHotelTremezzoGuests.length; i++) {
+	console.log((grandHotelTremezzoGuests[i]) + ' please hush up!!!');
+};
+
+
+
 // Create an empty array sleepingGuests
+
+const sleepingGuests = [];
+
+
 
 // The guests passed out. Loop over the guests and add them to the sleepingGuests array.  
 // (Don't remove them from grandHotelTremezzoGuests.) Log out sleepingGuests.
+
+for (let i = 0; i < grandHotelTremezzoGuests.length; i++) {
+	sleepingGuests.push(grandHotelTremezzoGuests[i])
+};
+console.log(sleepingGuests);
+
+
 
 // Lake Como has started to flood so all of the guests are fleeing to Milan. 
 // Use splice to remove all of the guests (simultaneously using push to add them 
 // to the array of checked out guests). Log both grandHotelTremezzoGuests 
 // and grandHotelTremezzoPastGuests in the same log statement.
 
+
+for (let i = 0; i < grandHotelTremezzoGuests.length; i++) {
+	grandHotelTremezzoPastGuests.push(grandHotelTremezzoGuests[i]);
+};
+
+for (let i = 0; i < grandHotelTremezzoGuests.length; i++) {
+	grandHotelTremezzoGuests.splice(0, 4);
+};
+
+console.log(grandHotelTremezzoPastGuests, grandHotelTremezzoGuests);
+// I couldnt figure out how to push and splice in the same loop...Tried for a long while with no luck
+
+
+
 // Create a variable isGrandHotelTremezzoEmpty to be equal to a 
 // boolean with the appropriate value (it is empty). Log this variable.
+
+const isGrandHotelTremezzoEmpty = hotelCapacity > 0;
+console.log(isGrandHotelTremezzoEmpty);
+
+
+
+
+
+
+
+
+
