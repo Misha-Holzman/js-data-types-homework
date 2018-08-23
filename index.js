@@ -60,6 +60,10 @@ console.log(total);
 
 const pounds = 155;
 
+const kilograms = pounds * 1 / 2.2046226218;
+
+console.log(kilograms);
+
 // Write an expression here which computes
 // the correct value of a variable "kilograms"
 
